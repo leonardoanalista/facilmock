@@ -31,7 +31,7 @@ Assuming you already have your running and middlewares configured, all you need 
     var app = express();
 
     //facilmock loaded at this point.
-    var facilmock = require('../index')(app);
+    var facilmock = require('facilmock')(app);
 
     //existing mocked endpoint
     app.get('/api/get-user-info', function(req, res) {
@@ -46,7 +46,7 @@ Assuming you already have your running and middlewares configured, all you need 
     });
 ```
 
-Facilmock is just a couple of expressjs middlewares. So order here matters as any expressjs app. 
+Facilmock is just a couple of expressjs middlewares. So order here matters as any expressjs app.
 Assuming you are using this module from your test, you now need to stub your endpoints:
 
 ```js

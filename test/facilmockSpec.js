@@ -16,14 +16,14 @@ describe('#facilmock', function() {
     var facilmock = require('../index')(app);
 
     server = app.listen(7777, function () {
-      console.log('>>> Unit Test Express App for testing is running on http://%s:%s', server.address().address, server.address().port);
+      console.log('>> Unit Test facilmock Express App for testing is running on http://%s:%s', server.address().address, server.address().port);
       done();
     });
   });
 
   after(function(done){
     server.close(function () {
-      console.log("Closed express test app.");
+      console.log(">> Closed facilmock express test app.");
       process.exit();
       done();
     });
