@@ -46,7 +46,7 @@ Assuming you already have your running and middlewares configured, all you need 
     });
 ```
 
-Facilmock is just a couple of expressjs middlewares. So order matters. 
+Facilmock is just a couple of expressjs middlewares. So order here matters as any expressjs app. 
 Assuming you are using this module from your test, you now need to stub your endpoints:
 
 ```js
@@ -89,7 +89,7 @@ Those are not part of this module and is totally related to your use case so add
 ## Facilmock API
 `facilmock` has only three methods on the API and they are extremelly intuitive:
 ```js
-- POST a JSON to /mockme;     return json with all stubbed end-points.
+- POST a JSON to /mockme;       return json with all stubbed end-points.
 - GET         to /getmocks;     return json with all stubbed end-points.
 - GET         to /resetmocks;   clear up mocked endpoint and return the current adn empty json object.
 ```
@@ -100,7 +100,7 @@ Those are not part of this module and is totally related to your use case so add
   npm test
 ```
 
-## Contributing
+
 ## Contributing
 
 Leonardo Correa
