@@ -1,7 +1,7 @@
 {
   "name": "facilmock",
   "version": "0.0.1",
-  "description": "Exposes an API to mock endpoints for Expressjs apps.",
+  "description": "Module to stub endpoints for Expressjs apps running locally",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
@@ -12,9 +12,10 @@
   },
   "keywords": [
     "e2e",
-    "mocking",
+    "testing",
+    "mock",
     "expressjs",
-    "mocking"
+    "stub"
   ],
   "author": "Leonardo Correa",
   "license": "MIT",
