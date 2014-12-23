@@ -23,9 +23,10 @@ npm install facilmock --save-dev
 
 ## Usage
 
+
 Assuming you already have your running and middlewares configured, all you need is load `facilmock` module:
 
-```sh
+```js
     var express = require('express');
     var app = express();
 
@@ -45,9 +46,10 @@ Assuming you already have your running and middlewares configured, all you need 
     });
 ```
 
+Facilmock is just a couple of expressjs middlewares. So order matters. 
 Assuming you are using this module from your test, you now need to stub your endpoints:
 
-```sh
+```js
   var request = require('supertest');
   var url = 'http://localhost:7777'
   request(url).post('/mockme')
@@ -84,12 +86,21 @@ app.all('/*', function(req, res, next) {
 Those are not part of this module and is totally related to your use case so add if and only if you need it.
 
 
+## Facilmock API
+`facilmock` has only three methods on the API and they are extremelly intuitive:
+```js
+- POST a JSON to /mockme;     return json with all stubbed end-points.
+- GET         to /getmocks;     return json with all stubbed end-points.
+- GET         to /resetmocks;   clear up mocked endpoint and return the current adn empty json object.
+```
+
 ## Tests
 
 ```js
   npm test
 ```
 
+## Contributing
 ## Contributing
 
 Leonardo Correa
