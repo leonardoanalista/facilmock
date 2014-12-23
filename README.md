@@ -4,7 +4,7 @@ facilmock
 
 Exposes an API to mock endpoints for Expressjs apps.
 
-Once module added, it seats on front of every single request.
+Once module added, it seats in front of every request to your [expressJS](http://expressjs.com/) app.
 If `facilmock` can match the request `method` and `url` from mocked endpoints, it will return the `status code` and `response` pre configured.
 If it can't match anyting, things will as usual like `facilmock` doens't even exist.
 
@@ -70,6 +70,7 @@ Or test this service failure:
       done();
   });
 ```
+Note I am using [supertest](https://github.com/tj/supertest) to perform the request against `facilmock`
 
 
 Don't forget if you are dealing with cross domain services, you may be interested in those lines too:
