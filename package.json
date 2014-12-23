@@ -1,7 +1,7 @@
 {
   "name": "facilmock",
   "version": "0.0.1",
-  "description": "Module to stub endpoints for Expressjs apps running locally",
+  "description": "Module to stub endpoints for Expressjs apps running. Useful for devs, jenking boxes or any e2e test machine.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "e2e",
+    "continuous integration",    
     "testing",
     "mock",
     "expressjs",
