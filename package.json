@@ -1,0 +1,32 @@
+{
+  "name": "facilmock",
+  "version": "0.0.1",
+  "description": "Exposes an API to mock endpoints for Expressjs apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonardoanalista/facilmock.git"
+  },
+  "keywords": [
+    "e2e",
+    "mocking",
+    "expressjs",
+    "mocking"
+  ],
+  "author": "Leonardo Correa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardoanalista/facilmock/issues"
+  },
+  "homepage": "https://github.com/leonardoanalista/facilmock",
+  "devDependencies": {
+    "body-parser": "^1.10.0",
+    "chai": "^1.10.0",
+    "express": "^4.10.6",
+    "mocha": "^2.0.1",
+    "supertest": "^0.15.0"
+  }
+}
