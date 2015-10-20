@@ -8,7 +8,7 @@ Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to tempor
 
 - You stubbed your backend with an ExpressJS app. You have a service that returns `200, {name: 'Leonardo'}`. You wish to simulate a failure scenario for the first call `500, {error: 'server is down. Click here to retry.'}`. Now you want the service call to return a success for a `retry()` or any subsequent calls.
 
-- in summary, `facilmock` can temporary change the behavior of a service call via REST API call to your own stub ExpressJS. Then, when you wish, you can again via REST API call `reset` all tempory behavior. Please refer to exmaples bellow.
+- in summary, `facilmock` can temporary change the behavior of a service call via REST API call to your own stub ExpressJS. When you wish you can again, via REST API call, `reset` all tempory behavior. Please refer to exmaples bellow.
  
 ## How it works
 
