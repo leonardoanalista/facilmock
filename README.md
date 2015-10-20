@@ -2,17 +2,21 @@
 facilmock
 =========
 
-Exposes an API to mock endpoints for Expressjs apps.
+Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporary change the behavior of your mocked service calls.
+
+## Useful for developers, Continous integration. Use case:
+
+- You stubbed your backend with an ExpressJS app. You have a service that returns `200, {name: 'Leonardo'}`. You wish to simulate a failure scenario for the first call `500, {error: 'server is down. Click here to retry.'}`. Now you want the service call to return a success for a `retry()` or any subsequent calls.
+
+- in summary, `facilmock` can temporary change the behavior of a service call via REST API call to your own stub ExpressJS. Then, when you wish, you can again via REST API call `reset` all tempory behavior. Please refer to exmaples bellow.
+ 
+## How it works
 
 Once module added, it seats in front of every request to your [expressJS](http://expressjs.com/) app.
-If `facilmock` can match the request `method` and `url` from mocked endpoints, it will return the `status code` and `response` pre configured.
-If it can't match anyting, things will as usual like `facilmock` doens't even exist.
 
+If `facilmock` can match the request `method` and `url` from mocked endpoints, it will return the `status code` and `response` pre configured by you.
 
-Useful for developers, Continous integration machines
-Eg.:
-While you are developing your code, you want your local app to on its best behave where services succeed.
-However, when you write protractor E2E tests, you may want to test all possible unsuccessful scenarios. This is when you need `facilmock`.
+When `facilmock` can't match anyting, things will as usual like `facilmock` doens't even exist.
 
 
 ## Installation
@@ -20,6 +24,8 @@ However, when you write protractor E2E tests, you may want to test all possible 
 ```sh
 npm install facilmock --save-dev
 ```
+
+*This module is appropriated for development use only.*
 
 ## Usage
 
@@ -73,7 +79,7 @@ Or test this service failure:
 Note I am using [supertest](https://github.com/tj/supertest) to perform the request against `facilmock`
 
 
-Don't forget if you are dealing with cross domain services, you may be interested in those lines too:
+Don't forget: if you are dealing with cross domain services calls, you may be interested in those lines too:
 ```js
 app.all('/*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -84,7 +90,7 @@ app.all('/*', function(req, res, next) {
 });
 ```
 
-Those are not part of this module and is totally related to your use case so add if and only if you need it.
+Those are *not* part of this module and is totally related to your use case. So add those lines to your ExpressJS app if this is your case.
 
 
 ## Facilmock API
