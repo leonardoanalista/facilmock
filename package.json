@@ -1,7 +1,7 @@
 {
   "name": "facilmock",
-  "version": "0.0.1",
-  "description": "Module to stub endpoints for Expressjs apps running. Useful for devs, jenking boxes or any e2e test machine.",
+  "version": "1.0.0",
+  "description": "Module to stub endpoints for Expressjs apps running. Useful when you need to temporarily mock services for testing reasons.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "e2e",
-    "continuous integration",    
+    "continuous integration",
     "testing",
     "mock",
     "expressjs",
@@ -25,10 +25,16 @@
   },
   "homepage": "https://github.com/leonardoanalista/facilmock",
   "devDependencies": {
-    "body-parser": "^1.10.0",
-    "chai": "^1.10.0",
-    "express": "^4.10.6",
-    "mocha": "^2.0.1",
-    "supertest": "^0.15.0"
+    "body-parser": "1.14.1",
+    "chai": "3.4.1",
+    "cz-customizable": "^1.0.0",
+    "express": "4.13.3",
+    "mocha": "2.3.3",
+    "supertest": "1.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
