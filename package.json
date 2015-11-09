@@ -27,14 +27,12 @@
   "devDependencies": {
     "body-parser": "1.14.1",
     "chai": "3.4.1",
-    "cz-customizable": "^1.0.0",
+    "cz-customizable": "1.0.1",
     "express": "4.13.3",
     "mocha": "2.3.3",
     "supertest": "1.1.0"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
+  "czConfig": {
+    "path": "node_modules/cz-customizable"
   }
 }
