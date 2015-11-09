@@ -2,7 +2,7 @@
 facilmock
 =========
 
-Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporary change the behavior of your mocked service calls.
+Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporarily change the behavior of your mocked service calls.
 
 ## Useful for developers, Continous integration. Use case:
 
