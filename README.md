@@ -4,6 +4,10 @@ facilmock
 
 Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporarily change the behavior of your mocked service calls.
 
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+
 ## Useful for developers, Continous integration. Use case:
 
 - You stubbed your backend with an ExpressJS app. You have a service that returns `200, {name: 'Leonardo'}`. You wish to simulate a failure scenario for the first call `500, {error: 'server is down. Click here to retry.'}`. Now you want the service call to return a success for a `retry()` or any subsequent calls.
