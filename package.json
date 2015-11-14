@@ -1,6 +1,6 @@
 {
   "name": "facilmock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Module to stub endpoints for Expressjs apps running. Useful when you need to temporarily mock services for testing reasons.",
   "main": "index.js",
   "scripts": {
