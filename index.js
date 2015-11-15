@@ -13,8 +13,8 @@ module.exports = function(app) {
   //tries to match a  stubbed endpoint
   app.all('/*', function(req, res, next) {
 
-    if(stubs[req.method]){
-      if(stubs[req.method][req.url]){
+    if (stubs[req.method]) {
+      if (stubs[req.method][req.url]) {
 
         console.info('>> facilmock just matched your request to ' + req.url, req.method);
 
@@ -31,23 +31,23 @@ module.exports = function(app) {
   //returns a JSON with the all stubbed content.
   app.post('/mockme', jsonParser, function(req, res, next) {
 
-    if(req.body.method === undefined){
+    if (req.body.method === undefined) {
       res.status(403).send('Error: where is the field method');
       return;
     }
-    if(req.body.url === undefined){
+    if (req.body.url === undefined) {
       res.status(403).send('Error: where is the field "url"');
       return;
     }
-    if(!req.body.response){
+    if (!req.body.response) {
       res.status(403).send('Error: where is the field response field containing code and content');
       return;
     }
-    if(req.body.response.code === undefined){
+    if (req.body.response.code === undefined) {
       res.status(403).send('Error: where is the field "response.code"');
       return;
     }
-    if(req.body.response.content === undefined){
+    if (req.body.response.content === undefined) {
       res.status(403).send('Error: where is the field "response.content"');
       return;
     }

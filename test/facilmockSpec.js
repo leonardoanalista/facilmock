@@ -1,16 +1,18 @@
+'use strict';
+
 var facilmock = require('../index');
 var should = require('chai').should();
 var expect = require('chai').expect;
 var express = require('express');
 var request = require('supertest');
-var url = 'http://localhost:7777'
+var url = 'http://localhost:7777';
 
 
 describe('#facilmock', function() {
 
   var server;
 
-  before(function(done){
+  before(function(done) {
     var app = express();
 
     //facilmock loaded at this point.
@@ -22,9 +24,9 @@ describe('#facilmock', function() {
     });
   });
 
-  after(function(done){
+  after(function(done) {
     server.close(function () {
-      console.log(">> Closed facilmock express test app.");
+      console.log('>> Closed facilmock express test app.');
       process.exit();
       done();
     });
@@ -41,14 +43,14 @@ describe('#facilmock', function() {
 
   it('mymock should mock endpoint ', function(done) {
     var data = {
-        "method": "GET",
-        "url": "/api/users/address",
-        "response": {
-            "code": "200",
-            "content": {
-                "code": "1",
-                "message": "Success"
-              }
+        'method': 'GET',
+        'url': '/api/users/address',
+        'response': {
+            'code': '200',
+            'content': {
+              'code': '1',
+              'message': 'Success'
+            }
         }
     };
 
@@ -76,7 +78,7 @@ describe('#facilmock', function() {
     request(url).get('/api/users/address')
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        expect(res.body.code).to.equal("1");
+        expect(res.body.code).to.equal('1');
         expect(res.body.message).to.equal('Success');
         done();
       });
