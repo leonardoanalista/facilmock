@@ -13,7 +13,7 @@ before_script:
   - npm prune
 script:
   - npm run eslint
-  - npm run test:singlegs
+  - npm run test:singleg
 
   - npm run test:check-coverage
 after_success:
