@@ -13,8 +13,7 @@ before_script:
   - npm prune
 script:
   - npm run eslint
-  - npm run test:singleg
-
+  - npm run test:single
   - npm run test:check-coverage
 after_success:
   - npm run semantic-release
