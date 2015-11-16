@@ -121,7 +121,3 @@ If you need anyting more sofisticated, feel free to send me a pull request. This
 
 
 Leonardo Correa
-
-## Release History
-
-* 0.0.1 Initial release -
