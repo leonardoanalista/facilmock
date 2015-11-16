@@ -5,7 +5,7 @@ facilmock
 Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporarily change the behavior of your mocked service calls.
 
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Build Status](https://travis-ci.org/leonardoanalista/facilmock.svg)](https://travis-ci.org/leonardoanalista/facilmock) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![codecov.io](https://codecov.io/github/leonardoanalista/facilmock/coverage.svg?branch=master)](https://codecov.io/github/leonardoanalista/facilmock?branch=master) [![npm monthly downloads](https://img.shields.io/npm/dm/facilmock.svg?style=flat-square)](https://www.npmjs.com/package/facilmock)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Build Status](https://travis-ci.org/leonardoanalista/facilmock.svg)](https://travis-ci.org/leonardoanalista/facilmock) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![codecov.io](https://codecov.io/github/leonardoanalista/facilmock/coverage.svg?branch=master)](https://codecov.io/github/leonardoanalista/facilmock?branch=master) [![npm monthly downloads](https://img.shields.io/npm/david/leonardoanalista/facilmock.svg?style=flat-square)](https://www.npmjs.com/package/facilmock)
 
 [![Dev Dependencies](https://img.shields.io/david/dev/leonardoanalista/facilmock.svg)] 
 
