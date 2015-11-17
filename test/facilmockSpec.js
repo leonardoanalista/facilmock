@@ -39,7 +39,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(200);
         done();
     });
-  });//end it
+  });
 
   it('mymock should mock endpoint ', function(done) {
     var data = {
@@ -71,7 +71,7 @@ describe('#facilmock', function() {
 
       });
 
-  });//end it
+  });
 
 
   it('mymock should respond to request correctly get', function(done) {
@@ -82,7 +82,7 @@ describe('#facilmock', function() {
         expect(res.body.message).to.equal('Success');
         done();
       });
-  });//end it
+  });
 
 
   it('mymock should respond to request correctly for post1', function(done) {
@@ -93,7 +93,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(200);
         done();
       });
-  });//end it
+  });
 
 
   it('mymock should validate required field method', function(done) {
@@ -103,7 +103,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(403);
         done();
     });
-  });//end it
+  });
 
 
   it('mymock should validate required field url', function(done) {
@@ -114,7 +114,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(403);
         done();
     });
-  });//end it
+  });
 
   it('mymock should validate required field response', function(done) {
     request(url).post('/mockme')
@@ -124,7 +124,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(403);
         done();
     });
-  });//end it
+  });
 
   it('mymock should validate required field response.code', function(done) {
     request(url).post('/mockme')
@@ -134,7 +134,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(403);
         done();
     });
-  });//end it
+  });
 
   it('mymock should validate required field response.content', function(done) {
     request(url).post('/mockme')
@@ -144,7 +144,7 @@ describe('#facilmock', function() {
         expect(res.status).to.equal(403);
         done();
     });
-  });//end it
+  });
 
 
   it('mymock should still have valid endpoints', function(done) {
@@ -155,7 +155,7 @@ describe('#facilmock', function() {
         expect(res.body['POST']['/post1']['response']['content']['nada']).to.equal('post1');
         done();
     });
-  });//end it
+  });
 
 
   it('mymock should clear endpoints', function(done) {
@@ -165,7 +165,7 @@ describe('#facilmock', function() {
         expect( JSON.stringify(res.body) ).to.equal('{}');
         done();
     });
-  });//end it
+  });
 
 
 });
