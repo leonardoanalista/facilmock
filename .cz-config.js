@@ -1,8 +1,9 @@
+'use strict';
 
 module.exports = {
 
   types: [
-    {value: 'feat',     name: 'feat:     A new feature for FACILMOCK'},
+    {value: 'feat',     name: 'feat:     A new feature'},
     {value: 'fix',      name: 'fix:      A bug fix'},
     {value: 'docs',     name: 'docs:     Documentation only changes'},
     {value: 'style',    name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)'},
@@ -15,10 +16,11 @@ module.exports = {
   ],
 
   scopes: [
-    {name: 'app'},
+    {name: 'accounts'},
+    {name: 'admin'},
     {name: 'app'},
     {name: 'build'},
-    {name: 'tests'}
+    {name: 'others'}
   ],
 
   //it needs to match the value for field type. Eg.: 'fix'
@@ -31,4 +33,4 @@ module.exports = {
     ]
   }
 
-}
+};
