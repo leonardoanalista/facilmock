@@ -5,16 +5,16 @@ facilmock
 Exposes an API to mock endpoints for ExpressJS apps. It is a handy way to temporarily change the behavior of your mocked service calls.
 
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Build Status](https://travis-ci.org/leonardoanalista/facilmock.svg)](https://travis-ci.org/leonardoanalista/facilmock) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![codecov.io](https://codecov.io/github/leonardoanalista/facilmock/coverage.svg?branch=master)](https://codecov.io/github/leonardoanalista/facilmock?branch=master) [![npm monthly downloads](https://img.shields.io/npm/david/leonardoanalista/facilmock.svg?style=flat-square)](https://www.npmjs.com/package/facilmock)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Build Status](https://travis-ci.org/leonardoanalista/facilmock.svg)](https://travis-ci.org/leonardoanalista/facilmock) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![codecov.io](https://codecov.io/github/leonardoanalista/facilmock/coverage.svg?branch=master)](https://codecov.io/github/leonardoanalista/facilmock?branch=master) [![npm monthly downloads](https://img.shields.io/npm/david/leonardoanalista/facilmock.svg?style=flat-square)](https://www.npmjs.com/package/facilmock)]
 
-[![Dev Dependencies](https://img.shields.io/david/dev/leonardoanalista/facilmock.svg)] 
+[![Dev Dependencies](https://img.shields.io/david/dev/leonardoanalista/facilmock.svg)]
 
 ## Useful for developers, Continous integration. Use case:
 
 - You stubbed your backend with an ExpressJS app. You have a service that returns `200, {name: 'Leonardo'}`. You wish to simulate a failure scenario for the first call `500, {error: 'server is down. Click here to retry.'}`. Now you want the service call to return a success for a `retry()` or any subsequent calls.
 
 - in summary, `facilmock` can temporary change the behavior of a service call via REST API call to your own stub ExpressJS. When you wish you can again, via REST API call, `reset` all tempory behavior. Please refer to exmaples bellow.
- 
+
 ## How it works
 
 Once module added, it seats in front of every request to your [expressJS](http://expressjs.com/) app.
@@ -115,7 +115,7 @@ Those are *not* part of this module and is totally related to your use case. So 
 ## About this
 
 There are lots of further features that could be implemented. However `facilmock` solves my problem at the moment.
-If you need anyting more sofisticated, feel free to send me a pull request. This package is not supposed to replace any other testing framework. 
+If you need anyting more sofisticated, feel free to send me a pull request. This package is not supposed to replace any other testing framework.
 
 ## Contributing
 
