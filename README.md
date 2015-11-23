@@ -125,5 +125,4 @@ If you need anyting more sofisticated, please send me a pull request. This packa
 Please refer to the [Contributor Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md) and [Conduct of Code](https://github.com/angular/code-of-conduct/blob/master/CODE_OF_CONDUCT.md) from [AngularJs](https://github.com/angular/angular.js) project.
 
 
-
 Leonardo Correa
