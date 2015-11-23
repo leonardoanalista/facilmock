@@ -3,7 +3,7 @@
 
 module.exports = function(app) {
 
-  console.info('>> Just load facilmock module...');
+  console.info('>> Facilmock module has been loaded...');
 
   var bodyParser = require('body-parser');
 
