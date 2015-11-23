@@ -23,6 +23,7 @@ module.exports = {
     {name: 'others'}
   ],
 
+
   //it needs to match the value for field type. Eg.: 'fix'
   scopeOverrides: {
   }
