@@ -116,9 +116,13 @@ Those are *not* part of this module and is totally related to your use case. So 
 ## About this
 
 There are lots of further features that could be implemented. However `facilmock` solves my problem at the moment.
-If you need anyting more sofisticated, feel free to send me a pull request. This package is not supposed to replace any other testing framework.
+If you need anyting more sofisticated, please send me a pull request. This package is not supposed to replace any other testing framework.
+
+
 
 ## Contributing
+
+Please refer to the [Contributor Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md) and [Conduct of Code](https://github.com/angular/code-of-conduct/blob/master/CODE_OF_CONDUCT.md) from [AngularJs](https://github.com/angular/angular.js) project.
 
 
 Leonardo Correa
